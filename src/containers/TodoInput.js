@@ -23,7 +23,8 @@ function TodoInput(props) {
                     </div>
 
                     <div className="right-align">
-                        <button type="submit" className="btn btn-small waves-effect waves-light blue darken-4">Create Task</button>
+                        <button type="submit"
+                            className="btn btn-small waves-effect waves-light light-blue accent-2 black-text">Create Task</button>
                     </div>
                 </form>
             </div>

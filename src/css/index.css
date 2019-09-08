@@ -1,5 +1,9 @@
-body, textarea, input {
+body, textarea, input, button {
     font-family: 'Josefin Sans', sans-serif!important;
+}
+
+.btn-small, .btn {
+    padding-top: 1px!important;
 }
 
 ul {
