@@ -1,0 +1,57 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    width: 100%;
+}
+strike {
+    cursor: pointer;
+}
+
+.tabs .tab a {
+    text-transform: capitalize;
+    padding: 0;
+}
+
+.tab a .badge {
+    position: relative;
+    top: 12px;
+    margin:0;
+    padding: 0;
+}
+
+.tabs .tab a.active, 
+.tabs .tab a:hover, 
+.tabs .tab a:focus.active
+{
+    font-weight: 500;
+    color: #fff!important;
+} 
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+
+    background-color: #ffffff50!important;
+}
+
+textarea:focus:not([readonly]), 
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    box-shadow:#4a148c 0px 1px 0px 0px!important;
+    border-bottom: 1px solid #4a148c!important;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-bottom-color: #4a148c!important;
+    border-right-color: #4a148c!important;
+}
+
+[type="checkbox"]:not(:checked) + span:not(.lever):before, 
+[type="checkbox"]:not(:checked) + span:not(.lever):after {
+    border-radius: 5px;
+}
+
+.content {
+    word-wrap: break-word!important;
+    word-break: normal!important;
+}
