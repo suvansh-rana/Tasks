@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { removeTask, toggleDone } from "../actions/todoActions";
 import TodoListItem from "./TodoListItem";
 import getTodos from "../helpers/getTodos";
+import { Tabs } from "materialize-css";
 
 function TodoList(props) {
 
@@ -59,6 +60,13 @@ const mapDispatchToProps = dispatch => {
         },
         toggleDone: taskObj => {
             dispatch(toggleDone(taskObj));
+
+            const instance = Tabs.getInstance(
+                document.querySelector("ul.tabs")
+            );
+
+            !taskObj.done ? instance.select("done") : instance.select("remaining");
+
         }
     }
 }

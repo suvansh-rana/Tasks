@@ -23,7 +23,7 @@ function TodoInput(props) {
                     </div>
 
                     <div className="right-align">
-                        <button type="submit" className="btn btn-small waves-effect waves-light purple darken-4">Create Task</button>
+                        <button type="submit" className="btn btn-small waves-effect waves-light blue darken-4">Create Task</button>
                     </div>
                 </form>
             </div>
@@ -47,7 +47,7 @@ const mapDispatchToProps = dispatch => {
             const taskTitle = taskTitleInput.value;
             const taskContent = taskContentInput.value;
 
-            var instance = Tabs.getInstance(
+            const instance = Tabs.getInstance(
                 document.querySelector("ul.tabs")
             );
 

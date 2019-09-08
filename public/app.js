@@ -1,22 +1,31 @@
-
-document.addEventListener("DOMContentLoaded", () => { M.AutoInit(); });
-
 let deferredPrompt;
 
-window.addEventListener('beforeinstallprompt', (e) => {
 
-    e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
 
-    deferredPrompt = e;
+    M.AutoInit();
 
-    deferredPrompt.prompt();
+    const installButton = document.querySelector("#install");
 
-    deferredPrompt.userChoice
-        .then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') {
-                console.log('Tasks successfully added to home screen.Enjoy the experience !');
-            }
-            deferredPrompt = null;
-        });
+    window.addEventListener('beforeinstallprompt', (e) => {
+
+        e.preventDefault();
+        deferredPrompt = e;
+        installButton.classList.remove("hide");
+
+    });
+
+    installButton.addEventListener("click", function () {
+        deferredPrompt.prompt();
+
+        deferredPrompt.userChoice
+            .then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('Tasks successfully added to home screen. Enjoy the experience !');
+                }
+                deferredPrompt = null;
+            });
+
+    })
 
 });

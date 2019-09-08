@@ -1,5 +1,5 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body, textarea, input {
+    font-family: 'Josefin Sans', sans-serif!important;
 }
 
 ul {
@@ -19,31 +19,40 @@ strike {
     top: 12px;
     margin:0;
     padding: 0;
+    color: #222!important;
 }
 
-.tabs .tab a.active, 
-.tabs .tab a:hover, 
+.tabs .tab a  {
+    color: #555!important;
+}
+
+.tabs .tab a.active,
+.tabs .tab a:hover,
 .tabs .tab a:focus.active
 {
     font-weight: 500;
-    color: #fff!important;
-} 
+    color: #000!important;
+}
+
+li.indicator {
+    background-color: #000!important
+}
 
 .tabs .tab a:focus,
 .tabs .tab a:focus.active {
 
-    background-color: #ffffff50!important;
+    background-color: #00000050!important;
 }
 
 textarea:focus:not([readonly]), 
 input[type=text]:not(.browser-default):focus:not([readonly]) {
-    box-shadow:#4a148c 0px 1px 0px 0px!important;
-    border-bottom: 1px solid #4a148c!important;
+    box-shadow:#000 0px 1px 0px 0px!important;
+    border-bottom: 1px solid #000!important;
 }
 
 [type="checkbox"]:checked+span:not(.lever):before {
-    border-bottom-color: #4a148c!important;
-    border-right-color: #4a148c!important;
+    border-bottom-color: #000!important;
+    border-right-color: #000!important;
 }
 
 [type="checkbox"]:not(:checked) + span:not(.lever):before, 
