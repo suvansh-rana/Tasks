@@ -19,7 +19,7 @@ function TodoList(props) {
                    todos.length > 0 ?
 
                         <div>
-                            {todos.map(
+                            {todos.reverse().map(
                                 taskObj =>
                                     <TodoListItem
                                         taskObj={taskObj}
