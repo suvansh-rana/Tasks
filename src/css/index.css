@@ -6,13 +6,6 @@ body, textarea, input, button {
     padding-top: 1px!important;
 }
 
-ul {
-    width: 100%;
-}
-strike {
-    cursor: pointer;
-}
-
 .tabs .tab a {
     text-transform: capitalize;
     padding: 0;
@@ -67,4 +60,13 @@ input[type=text]:not(.browser-default):focus:not([readonly]) {
 .content {
     word-wrap: break-word!important;
     word-break: normal!important;
+}
+
+
+@media only screen and (min-width: 993px) {
+
+    nav a.sidenav-trigger {
+        display: block;
+    }
+
 }
