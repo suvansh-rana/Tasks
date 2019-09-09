@@ -9,8 +9,8 @@ function Parent(props) {
 
                     <div className="nav-wrapper">
                         <a href="#!" className="left brand-logo black-text">Tasks</a>
-                        <a href="https://github.com/suvansh-rana" target="_blank" rel="noopener noreferrer" className="right sidenav-trigger">
-                            <i className="material-icons black-text">person</i>
+                        <a href="https://github.com/suvansh-rana/Tasks" target="_blank" rel="noopener noreferrer" className="right sidenav-trigger">
+                            <i className="material-icons black-text">code</i>
                         </a>
                         <a href="#!" id="install" className="right hide">
                             <i className="material-icons black-text">add_to_home_screen</i>
