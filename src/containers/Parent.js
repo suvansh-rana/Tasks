@@ -9,23 +9,13 @@ function Parent(props) {
 
                     <div className="nav-wrapper">
                         <a href="#!" className="left brand-logo black-text">Tasks</a>
-                        <a href="#!" className="right sidenav-trigger dropdown-trigger" data-target="more-options" >
-                            <i className="material-icons black-text">more_vert</i>
+                        <a href="https://github.com/suvansh-rana" target="_blank" rel="noopener noreferrer" className="right sidenav-trigger">
+                            <i className="material-icons black-text">person</i>
+                        </a>
+                        <a href="#!" id="install" className="right hide">
+                            <i className="material-icons black-text">add_to_home_screen</i>
                         </a>
                     </div>
-
-                    <ul id='more-options' className='dropdown-content'>
-                        <li id="install" className="hide">
-                            <a href="#!" className="black-text" >
-                                <i className="material-icons black-text">add_to_home_screen</i>Add to home screen
-                            </a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" target="_blank" href="https://github.com/suvansh-rana" className="black-text" >
-                                <i className="material-icons black-text">info</i>About Creator
-                            </a>
-                        </li>
-                    </ul>
 
                     <div className="nav-content">
                         <ul className="row tabs tabs-transparent">

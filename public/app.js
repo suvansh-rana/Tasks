@@ -6,11 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     M.AutoInit();
 
     const installButton = document.querySelector("#install");
-    const dropDowns = document.querySelectorAll(".dropdown-trigger");
-
-    M.Dropdown.init(dropDowns, {
-        constrainWidth: false
-    });
 
     window.addEventListener('beforeinstallprompt', (e) => {
 
